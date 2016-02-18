@@ -50,7 +50,7 @@ try
 	_playerMoney = _playerMoney - _salesPrice;
 	_playerObject setVariable ["ExileMoney", _playerMoney];
 	format["setAccountMoney:%1:%2", _playerMoney, (getPlayerUID _playerObject)] call ExileServer_system_database_query_fireAndForget;
-	format["buyHistory:%1:%2:%3",(getPlayerUID _playerObject), _salesPrice, _itemClassName] call ExileServer_system_database_query_fireAndForget;
+	format["buyHistory:%1:%2:%3:%4:%5:%6",(getPlayerUID _playerObject), _salesPrice, _itemClassName, str(mapGridPosition getPos _playerObject), _quantity, _playerMoney] call ExileServer_system_database_query_fireAndForget;
 	[_sessionID, "purchaseItemResponse", [0, str _playerMoney, _itemClassName, 1, _containerType, _containerNetID]] call ExileServer_system_network_send_to;
 	if !(_vehicleObject isEqualTo objNull) then
 	{
