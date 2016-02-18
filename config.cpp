@@ -1,0 +1,11 @@
+class CfgExileCustomCode 
+{
+ExileClient_gui_xm8_slide_apps_onOpen = "xm8Apps\ExileClient_gui_xm8_slide_apps_onOpen.sqf";
+ExileServer_object_player_event_onMpKilled = "ExileServer_object_player_event_onMpKilled.sqf";
+ExileServer_object_vehicle_event_onMpKilled = "ExileServer_object_vehicle_event_onMpKilled.sqf";
+ExileServer_system_trading_network_purchaseItemRequest = "ExileServer_system_trading_network_purchaseItemRequest.sqf";
+ExileServer_system_trading_network_sellItemRequest = "ExileServer_system_trading_network_sellItemRequest.sqf";
+ExileServer_system_trading_network_purchaseVehicleRequest = "ExileServer_system_trading_network_purchaseVehicleRequest.sqf";
+ExileServer_system_trading_network_purchaseVehicleSkinRequest = "ExileServer_system_trading_network_purchaseVehicleSkinRequest.sqf";
+ExileServer_system_trading_network_wasteDumpRequest = "ExileServer_system_trading_network_wasteDumpRequest.sqf";
+};
